@@ -1,5 +1,5 @@
 void setup() {
-  // put your setup code her, to run once:
+  // put your setup code here, to run once:
   Serial.begin(9600); // sets the baudrate to 9600 bps
   pinMode(13,OUTPUT); // configures the on-board LED as output
 }

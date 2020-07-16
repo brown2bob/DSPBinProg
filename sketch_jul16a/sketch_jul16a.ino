@@ -35,10 +35,10 @@ pinMode(6, OUTPUT); //Set pin 6 to output
 
 void loop()
 {
-  digitalWrite(6, LOW); // Use digitalWrite to set Pin 6 to low
-  digitalWrite(7, LOW); // Same as above for Pin 7
+  digitalWrite(6, HIGH); // Use digitalWrite to set Pin 6 to High
+  digitalWrite(7, HIGH); // Same as above for Pin 7
   delayMicroseconds(100); // 100ms per Bob
-  digitalWrite(7, HIGH); // Set to 0
+  digitalWrite(7, LOW); // Set to 0
 }
 
 /* This is the 3 step memory reading procedure that

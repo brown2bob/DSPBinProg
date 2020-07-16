@@ -21,7 +21,7 @@ pinMode(6, OUTPUT); //Set pin 6 to output
   Wire.setClock(400000); 
 
 //Start the serial port
-  Serial.begin(115200);
+  Serial.begin(9600); //Unsure of serial port, setting 9600 for now
 
   //Output raw bytes to terminal
   //In this case we're going to read all of the bytes

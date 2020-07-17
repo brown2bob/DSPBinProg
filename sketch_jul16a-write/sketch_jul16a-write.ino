@@ -24,6 +24,7 @@ pinMode(6, OUTPUT); //Set pin 6 to output
   Serial.begin(9600); //Unsure of serial port, setting 9600 for now
     
   digitalWrite(6, HIGH); // Use digitalWrite to set Pin 6 to High
+  delayMicroseconds(100); // 100ms per Bob
   digitalWrite(7, HIGH); // Same as above for Pin 7
   delayMicroseconds(100); // 100ms per Bob
 

@@ -22,6 +22,10 @@ pinMode(6, OUTPUT); //Set pin 6 to output
 
 //Start the serial port
   Serial.begin(9600); //Unsure of serial port, setting 9600 for now
+    
+  digitalWrite(6, HIGH); // Use digitalWrite to set Pin 6 to High
+  digitalWrite(7, HIGH); // Same as above for Pin 7
+  delayMicroseconds(100); // 100ms per Bob
 
   //Output raw bytes to terminal
   //In this case we're going to read all of the bytes
@@ -31,15 +35,13 @@ pinMode(6, OUTPUT); //Set pin 6 to output
     byte val = readEEPROM(x);
     Serial.write(val);
   }
+
+    digitalWrite(7, LOW); // Set to 0
 }
 
-void loop()
-{
-  digitalWrite(6, HIGH); // Use digitalWrite to set Pin 6 to High
-  digitalWrite(7, HIGH); // Same as above for Pin 7
-  delayMicroseconds(100); // 100ms per Bob
-  digitalWrite(7, LOW); // Set to 0
-}
+void loop() { 
+  // Just hang out
+  }
 
 /* This is the 3 step memory reading procedure that
 we talked about. First we send the MSB of the address. 
